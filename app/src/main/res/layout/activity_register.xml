@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green"
+    android:orientation="vertical"
+    android:paddingLeft="50dp"
+    android:paddingTop="50dp"
+    android:paddingRight="50dp">
+
+
+    <RelativeLayout
+        android:id="@+id/rltHead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvHead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/register_name"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/register_label_citizen_no"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox_icon_background"
+                android:padding="10dp"
+                android:src="@drawable/ic_account" />
+
+            <EditText
+                android:id="@+id/edtCitizenNo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox_background"
+                android:hint="เลขบัตร 13 หลัก"
+                android:inputType="numberSigned"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/register_label_phone_no"
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox_icon_background"
+                android:padding="10dp"
+                android:src="@drawable/ic_phone" />
+
+            <EditText
+                android:id="@+id/edtPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox_background"
+                android:enabled="true"
+                android:hint="xxxxxxxxxx"
+                android:inputType="numberSigned"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@color/white"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/register_label_pincode"
+            android:textColor="@color/white" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox_icon_background"
+                android:padding="10dp"
+                android:src="@drawable/ic_password" />
+
+            <EditText
+                android:id="@+id/edtPinCode"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="@drawable/textbox_background"
+                android:hint="****"
+                android:textColor="@color/white"
+                android:inputType="numberPassword"
+                android:paddingLeft="10sp"
+                android:paddingRight="10sp"
+                android:textCursorDrawable="@color/white"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="2"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_register"
+            android:text="@string/register_button_ok"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/btnExit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_register"
+            android:text="@string/register_button_cancel"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

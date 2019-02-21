@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">D-Mobile</string>
+
+
+
+
+    <string name="decimal_format">#,###</string>
+
+    <string name="text_sms_note_test">
+        บจก.ดีอี เอ็นเตอร์ไพรส์:\n
+        ขอแจ้งยอดการชำระเงินของคุณอรพิน\n
+        17 ธ.ค. = 3,690 บาท\n
+        18 ธ.ค. = 3,690 บาท\n
+        19 ธ.ค. = 3,690 บาท\n
+        20 ธ.ค. = 3,690 บาท\n
+        21 ธ.ค. = 1,845 บาท\n
+        ชำระแล้ว 66,420 บาท\n
+        คงเหลือ 83,025 บาท\n
+        มีข้อสงสัยกรุณาติดต่อกลับ 034762422
+    </string>
+
+    <!--Alert Message-->
+    <string name="message_title_note">แจ้งให้ทราบ</string>
+    <string name="message_title_caution">แจ้งเตือน</string>
+    <string name="message_title_ask">ยืนยัน</string>
+    <string name="message_connection_lost">ไม่สามารถเชื่อมต่อเซิฟเวอร์ได้</string>
+
+    <!--Menu-->
+    <string name="menu_button_sms">ข้อความ</string>
+    <string name="menu_button_contract">สัญญา</string>
+    <string name="menu_button_exit">ออก</string>
+
+    <!--Register-->
+    <string name="register_name">ลงทะเบียน</string>
+    <string name="register_label_citizen_no">เลขที่บัตรประชาชน</string>
+    <string name="register_label_pincode">รหัสผ่าน</string>
+    <string name="register_label_phone_no">หมายเลขโทรศัพท์</string>
+    <string name="register_button_ok">ตกลง</string>
+    <string name="register_button_cancel">ออก</string>
+
+</resources>
