@@ -8,13 +8,15 @@ android {
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner 'android.support.test.runner.AndroidJUnitRunner'
     }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+    }
+    productFlavors {
     }
 }
 
@@ -33,10 +35,14 @@ dependencies {
     //-- HTTP Request   Get/Post
     implementation 'com.squareup.retrofit2:retrofit:2.5.0'
     implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    //-- Dot Progress Bar
+    implementation 'com.marcok.stepprogressbar:stepprogressbar:1.0.1'
+    implementation 'com.github.silvestrpredko:dot-progress-bar:1.1'
     //-- For @Test
     testImplementation 'junit:junit:4.12'
     //-- Android UI
-    //    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    //    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 }
+
+
